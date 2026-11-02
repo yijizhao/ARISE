@@ -1,0 +1,18 @@
+# 8-node slice of SD for a quick check of both steps on a CPU.
+root: data/SD_demo
+steps_per_day: 96
+missing: zero
+norm_each_node: false
+has_coordinates: true
+overrides:
+  training:
+    epochs: 2
+    batch_size: 16
+  PatchSTG:
+    model:
+      factors: 1
+      layers: 1
+      input_dims: 8
+      node_dims: 4
+      tod_dims: 4
+      dow_dims: 4

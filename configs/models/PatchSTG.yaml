@@ -1,0 +1,23 @@
+# PatchSTG, Table 3 of the paper. Runs on SD, GBA, GLA and CA only.
+model:
+  spa_patchsize: 2
+  factors: 32
+  layers: 5             # attention blocks
+  input_dims: 64
+  node_dims: 32
+  tod_dims: 32
+  dow_dims: 32
+training:
+  epochs: 50
+  batch_size: 64
+  seed: 0
+  threads: 1
+  optimizer: AdamW
+  learning_rate: 0.002
+  weight_decay: 0.0001
+  milestones: [1, 35, 40]
+  gamma: 0.5
+  grad_clip: 5.0
+  loss_space: original            # MAE on original-scale targets
+  validation_space: original
+  loader_seed_mode: global        # shuffle with the global torch generator

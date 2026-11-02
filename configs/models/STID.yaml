@@ -1,0 +1,22 @@
+# STID, Table 3 of the paper.
+model:
+  input_dim: 3          # value, time of day, day of week
+  embed_dim: 32
+  node_dim: 32
+  tid_dim: 32
+  diw_dim: 32
+  num_layer: 3          # residual MLP blocks
+training:
+  epochs: 100
+  batch_size: 64
+  seed: 0
+  threads: 1
+  optimizer: Adam
+  learning_rate: 0.002
+  weight_decay: 0.0001
+  milestones: [1, 50, 80]
+  gamma: 0.5
+  grad_clip: 5.0
+  loss_space: standardized        # MAE on normalized targets
+  validation_space: standardized
+  loader_seed_mode: epoch         # shuffle seed = seed * 1000003 + epoch

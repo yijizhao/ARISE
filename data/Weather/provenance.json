@@ -1,0 +1,44 @@
+{
+  "dataset": "Weather",
+  "source": "BasicTS",
+  "source_url": "https://github.com/GestaltCogTeam/BasicTS",
+  "original_source_url": "https://github.com/thuml/Autoformer",
+  "frequency_minutes": 10,
+  "steps_per_day": 144,
+  "variables": 21,
+  "split_lengths": {
+    "train": 36887,
+    "val": 5269,
+    "test": 10540
+  },
+  "files": {
+    "train_data.npy": {
+      "bytes": 3098636,
+      "sha256": "63178c3e467b165c0f9f429e966edae94219b14ab17449a01a496190538883ae"
+    },
+    "val_data.npy": {
+      "bytes": 442724,
+      "sha256": "134a6c7181bb6c43c7488ccc1f0e6f689bfcba74cef8ad5b8079959e7da823af"
+    },
+    "test_data.npy": {
+      "bytes": 885488,
+      "sha256": "7be7102b5d9700c5f7162af97e43330b0707cdd871cf817f077759d6b99c37bd"
+    },
+    "train_timestamps.npy": {
+      "bytes": 590320,
+      "sha256": "627206cbe3573bf7fd03df3bee5c3a755fc46cacdf1d738f70fd1fa71893516b"
+    },
+    "val_timestamps.npy": {
+      "bytes": 84432,
+      "sha256": "60944abc00e117351728c90736602b9e604c00d06bd69007d3f270bf63f2fbb3"
+    },
+    "test_timestamps.npy": {
+      "bytes": 168768,
+      "sha256": "a6554e8fe5bb1c8359e1f60eb746518c3e36971da911ddd2a9320a45b304fc8c"
+    },
+    "meta.json": {
+      "bytes": 673,
+      "sha256": "98176c415a5f8e532c5756bcb79825830d2476b47479f1b3ac9e08db365db865"
+    }
+  }
+}

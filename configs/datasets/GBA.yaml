@@ -1,0 +1,5 @@
+root: data/GBA
+steps_per_day: 96
+missing: zero          # zeros are missing values
+norm_each_node: false
+has_coordinates: true  # PatchSTG can run

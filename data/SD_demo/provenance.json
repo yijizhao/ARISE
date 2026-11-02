@@ -1,0 +1,118 @@
+{
+  "dataset": "SD",
+  "source": "LargeST",
+  "source_url": "https://github.com/liuxu77/LargeST",
+  "frequency_minutes": 15,
+  "steps_per_day": 96,
+  "node_ids": [
+    1114091,
+    1118333,
+    1118348,
+    1114720,
+    1118352,
+    1118743,
+    1120362,
+    1118796
+  ],
+  "splits": {
+    "train": {
+      "source_shape": [
+        21024,
+        716,
+        3
+      ],
+      "time_slice": [
+        0,
+        384
+      ],
+      "node_slice": [
+        0,
+        8
+      ],
+      "feature": 0,
+      "shape": [
+        384,
+        8
+      ]
+    },
+    "val": {
+      "source_shape": [
+        7008,
+        716,
+        3
+      ],
+      "time_slice": [
+        0,
+        96
+      ],
+      "node_slice": [
+        0,
+        8
+      ],
+      "feature": 0,
+      "shape": [
+        96,
+        8
+      ]
+    },
+    "test": {
+      "source_shape": [
+        7008,
+        716,
+        3
+      ],
+      "time_slice": [
+        0,
+        96
+      ],
+      "node_slice": [
+        0,
+        8
+      ],
+      "feature": 0,
+      "shape": [
+        96,
+        8
+      ]
+    }
+  },
+  "spatial_indices": {
+    "metadata": "metadata.csv",
+    "depth": 2,
+    "patch_size": 2
+  },
+  "files": {
+    "metadata.csv": {
+      "bytes": 583,
+      "sha256": "cdcc45248c6eb1222266dcc4ddf9f1c540f3df27a466c13dc2eee8d39e6b10dd"
+    },
+    "spatial_indices.npz": {
+      "bytes": 928,
+      "sha256": "538da3c37f862e2b8e994efb49c289ee0a27f9599de0c8eb634c06ae63fd30f2"
+    },
+    "test_data.npy": {
+      "bytes": 3200,
+      "sha256": "1dff85ac49272986247700ecad6b8b79502408cc9e06980fccffade0608b484e"
+    },
+    "test_timestamps.npy": {
+      "bytes": 896,
+      "sha256": "53142ff159466dedff04e7a9cc882332d9f67e02a5ea172c3e881d24349856b0"
+    },
+    "train_data.npy": {
+      "bytes": 12416,
+      "sha256": "10a317c9311708038691084099ca1724a75297d2ec6dc3dd824f1ac10613b17b"
+    },
+    "train_timestamps.npy": {
+      "bytes": 3200,
+      "sha256": "001d16fcb4479aa690e0d37cd3dc075ee77c9d66ffee198a8494e3de4e8c7922"
+    },
+    "val_data.npy": {
+      "bytes": 3200,
+      "sha256": "dca77555d72e1e696cd18beb827e855f5befcc96dfe4ec012cf7978578d9cb99"
+    },
+    "val_timestamps.npy": {
+      "bytes": 896,
+      "sha256": "a59efff43d10f70b80ab5a8806513be88f36fb42022c8a507932b65d9a89265f"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Weather",
+    "domain": "weather",
+    "frequency (minutes)": 10,
+    "shape": [
+        52696,
+        21
+    ],
+    "timestamps_shape": [
+        52696,
+        4
+    ],
+    "timestamps_description": [
+        "time of day",
+        "day of week",
+        "day of month",
+        "day of year"
+    ],
+    "num_time_steps": 52696,
+    "num_vars": 21,
+    "has_graph": false,
+    "regular_settings": {
+        "train_val_test_ratio": [
+            0.7,
+            0.1,
+            0.2
+        ],
+        "norm_each_channel": true,
+        "rescale": false,
+        "metrics": [
+            "MAE",
+            "MSE"
+        ],
+        "null_val": NaN
+    }
+}

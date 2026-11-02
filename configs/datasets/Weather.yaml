@@ -1,0 +1,4 @@
+root: data/Weather
+steps_per_day: 144
+missing: nan
+norm_each_node: true
